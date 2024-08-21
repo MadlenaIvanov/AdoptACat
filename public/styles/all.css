@@ -1,0 +1,568 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #eff4f4;
+    /* background-image: url("data:image/svg+xml,%3Csvg width='50' height='50' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23bae6f2' fill-opacity='0.49' fill-rule='evenodd'/%3E%3C/svg%3E"); */
+    /* background-image: url("https://cdn.pixabay.com/photo/2021/03/01/14/35/cat-6059881_1280.jpg"); */
+    /* background-image: rgba(255,255,255, 0.7), url("../images/background.jpg"); */
+     background-image: linear-gradient(to right, rgba(255,255,255, 0.8) 0 100%), url("../images/background.jpg"); 
+
+}
+
+.basic {
+    background: linear-gradient(rgba(250, 248, 248, 0.2), rgba(25, 167, 173, 0.2)), url(../img/We-need-to-talk-about-pets.jpg) no-repeat center;
+    background-size: cover;
+    height: 85vh;
+    position: relative;
+    overflow: hidden;
+}
+
+
+#container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 0;
+}
+
+#site-content>section.basic {
+    text-align: center;
+}
+
+.login form,
+.register form,
+.create form, .edit form {
+    margin: 5rem auto;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.6rem 1rem;
+    border-radius: 0.4rem;
+    text-decoration: none;
+    font-weight: bold;
+    background: #af3838;
+    color: rgb(255, 255, 255);
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+li {
+    list-style-type: none;
+}
+
+.fa-heart {
+    color: red;
+}
+
+.img {
+    /* width: 18rem; */
+    position: relative;
+    overflow: hidden;
+    padding: 0rem;
+
+}
+
+#details-page-image {
+  width: 50%;
+}
+
+.informationImg {
+  width: 35rem;
+  position: relative;
+  overflow: visible;
+  padding: 0rem;
+  height: 22.5rem;
+}
+
+img {
+    display: block;
+    padding-bottom: 10%;
+    /* position: absolute; */
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.img::after {
+    display: block;
+    content: "";
+    padding-top: 100%;
+}
+
+.detailsOtherPet,
+.detailsMyPet,
+.deletePet,
+.otherPet,
+.myPet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:  rgb(179, 171, 171);
+}
+
+.informationPet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.detailsMyPet>p:nth-child(2),
+.deletePet>p:nth-child(2),
+.otherPet>p:nth-child(2),
+.myPet>p:nth-child(2) {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.dashboard>nav>ul {
+    display: flex;
+
+}
+
+.dashboard>nav>ul li:not(:last-child) {
+    padding-right: 1rem;
+}
+
+.dashboard .navbar {
+    justify-content: center;
+}
+
+.basic h1,
+.my-pets h1,
+.dashboard h1 {
+    text-align: center;
+    margin: 0rem;
+    padding: 2rem 0 1rem 0;
+}
+
+.dashboard h3 {
+    text-align: center;
+    margin: 0rem;
+    padding: 2rem 0 1rem 0;
+    font-size: 70px;
+}
+
+/* .dashboard span {
+    background-color: #ffffff;
+} */
+
+h3 {
+    margin-bottom: 0;
+
+}
+
+img.hearts {
+    width: 33px;
+    /* height: 30px; */
+    position: relative;
+    display: inline-block;
+}
+
+img.carousel {
+  width: 100% !important;
+  height: 500px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+div.actions {
+    display: flex;
+    justify-content: center;
+}
+div.actions a {
+    margin-right: 10px;
+    /* height: 25px; */
+}
+
+.deletePet>form,
+.detailsMyPet>form {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+}
+
+.my-pets .my-pets-list,
+.dashboard .other-pets-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.detailsMyPet textarea,
+.my-pets textarea {
+    margin-bottom: 2rem;
+}
+
+footer {
+    margin-top: auto;
+    text-align: center;
+    background: #234465;
+}
+
+footer p {
+    padding: 1rem 0;
+    font-weight: bold;
+    margin: 0rem;
+    color: white;
+}
+
+.no-pets {
+    font-weight: bold;
+    font-size: large;
+    text-align: center;
+}
+
+textarea#description {
+    height: 100px;
+    resize: none;
+}
+.otherPet {
+    align-items: inherit;
+    width: 29%; 
+    margin-bottom: 10px;
+    padding: 10px;
+    box-shadow: -8px -2px 28px -8px #000000;
+}
+
+#my-pets-page {
+    background-color: #af3838;
+    padding: 1%;
+}
+
+#find-and-adopt {
+    text-align: center;
+}
+
+#caring-information {
+  background-color: white;
+}
+
+#button-for-adoption {
+    display: grid;
+    margin: auto;
+    /* background-color: rgb(134, 0, 20); */
+}
+
+#caring-page-links {
+  font-size: 20px;
+  text-decoration: underline;
+  color: white;
+}
+
+#button-information {
+  /* display: grid;
+  margin: auto; */
+
+  /* display: inline-block; */
+  display: block;
+  width: 100%;
+
+  padding: 0.6rem 1rem;
+  border-radius: 0.4rem;
+  text-decoration: none;
+  font-weight: bold;
+  background: #af3838;;
+  color: rgb(255, 255, 255);
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+}
+
+#show-or-hide {
+    font-size: 20px;
+}
+
+/* @keyframes tonext {
+    75% {
+      left: 0;
+    }
+    95% {
+      left: 100%;
+    }
+    98% {
+      left: 100%;
+    }
+    99% {
+      left: 0;
+    }
+  }
+  
+  @keyframes tostart {
+    75% {
+      left: 0;
+    }
+    95% {
+      left: -300%;
+    }
+    98% {
+      left: -300%;
+    }
+    99% {
+      left: 0;
+    }
+  }
+  
+  @keyframes snap {
+    96% {
+      scroll-snap-align: center;
+    }
+    97% {
+      scroll-snap-align: none;
+    }
+    99% {
+      scroll-snap-align: none;
+    }
+    100% {
+      scroll-snap-align: center;
+    }
+  } */
+  
+  /* #try-carousel {
+    max-width: 80rem;
+    margin: 0 auto;
+    padding-top: 40%;
+  }
+  
+  {
+    box-sizing: border-box;
+    scrollbar-color: transparent transparent; 
+    scrollbar-width: 0px;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 0;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: transparent;
+    border: none;
+  }
+  
+   {
+    -ms-overflow-style: none;
+  } */
+  
+  
+  /* ol, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  } */
+  
+  /* .carousel {
+    position: relative;
+    padding-top: 75%;
+    filter: drop-shadow(0 0 10px #0003);
+    perspective: 100px;
+  }
+  
+  .carousel__viewport {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    overflow-x: scroll;
+    counter-reset: item;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+  }
+  
+  .carousel__slide {
+    position: relative;
+    flex: 0 0 100%;
+    width: 100%;
+    background-color: #f99;
+    counter-increment: item;
+  }
+  
+  .carousel__slide:nth-child(even) {
+    background-color: #99f;
+  }
+  
+  .carousel__slide:before {
+    content: counter(item);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%,-40%,70px);
+    color: #fff;
+    font-size: 2em;
+  }
+  
+  .carousel__snapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: center;
+  }
+  
+  @media (hover: hover) {
+    .carousel__snapper {
+      animation-name: tonext, snap;
+      animation-timing-function: ease;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+    }
+  
+    .carousel__slide:last-child .carousel__snapper {
+      animation-name: tostart, snap;
+    }
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+    .carousel__snapper {
+      animation-name: none;
+    }
+  }
+  
+  .carousel:hover .carousel__snapper,
+  .carousel:focus-within .carousel__snapper {
+    animation-name: none;
+  }
+  
+  .carousel__navigation {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+  }
+  
+  .carousel__navigation-list,
+  .carousel__navigation-item {
+    display: inline-block;
+  }
+  
+  .carousel__navigation-button {
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #333;
+    background-clip: content-box;
+    border: 0.25rem solid transparent;
+    border-radius: 50%;
+    font-size: 0;
+    transition: transform 0.1s;
+  }
+  
+  .carousel::before,
+  .carousel::after,
+  .carousel__prev,
+  .carousel__next {
+    position: absolute;
+    top: 0;
+    margin-top: 37.5%;
+    width: 4rem;
+    height: 4rem;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    font-size: 0;
+    outline: 0;
+  }
+  
+  .carousel::before,
+  .carousel__prev {
+    left: -1rem;
+  }
+  
+  .carousel::after,
+  .carousel__next {
+    right: -1rem;
+  }
+  
+  .carousel::before,
+  .carousel::after {
+    content: '';
+    z-index: 1;
+    background-color: #333;
+    background-size: 1.5rem 1.5rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: #fff;
+    font-size: 2.5rem;
+    line-height: 4rem;
+    text-align: center;
+    pointer-events: none;
+  }
+  
+  .carousel::before {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='0,50 80,100 80,0' fill='%23fff'/%3E%3C/svg%3E");
+  }
+  
+  .carousel::after {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='100,50 20,100 20,0' fill='%23fff'/%3E%3C/svg%3E");
+  } */
+  
+
+  /* dropdown menu */
+
+   /* Dropdown Button */
+ .dropbtn {
+  /* background-color: #8d2b6c; */
+  /* color: white; */
+  /* padding: 16px;
+  font-size: 16px;
+  border: none; */
+
+  align-self: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: rgb(219, 219, 219);
+
+  text-decoration: none;
+  display: inline-block;
+} 
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #792872;} 
